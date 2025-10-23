@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #3B3C61, #3B3C61, #2C2C33);
+}
+
+.barra-grid {
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+    background-color: #212121;
+    padding-left: 10px;
+    flex-shrink: 0d;
+}
+
+.barra-title {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;
+    font-size: 32px;
+    margin: 0;
+}
+
+.barra-logo {
+    height: 70px;
+    display: inline-block;
+}
