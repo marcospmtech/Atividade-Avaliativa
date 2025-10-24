@@ -1,10 +1,87 @@
-.body-grid {
-    width: 100%;
-    height: calc(100% - 60px);
+main {
+    height: calc(100vh - 60px);
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-end;
     display: flex;
-    flex-grow: 1;
+    flex: 1;
 }
 
-.body-title {
-    color: white;
+.card-grid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-main {
+    background-color: #f8f8f8;
+    display: flex;
+    height: 886px;
+    width: 90vw;
+    max-width: 1700px;
+    margin-top: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1400px) {
+    .card-main {
+        width: 95vw;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-main {
+        width: 98vw;
+        gap: 15px;
+    }
+}
+
+.card {
+    margin-top: 40px;
+    height: 420px;
+    width: 320px;
+    background-color: #fafafa;
+    box-shadow: 0 0 10px 3px #00000042;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px 5px #00000055;
+}
+
+.card img {
+    margin-left: 40px;
+    width: 240px;
+    height: 45%;
+}
+
+.card-title {
+    font-family: "Roboto Condensed", sans-serif;
+    margin-left: 10px;
+    font-weight: 480;
+    font-size: 22px;
+}
+
+.card-po {
+    font-family: "Roboto Condensed", sans-serif;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.card-pf {
+    font-family: "Roboto Condensed", sans-serif;
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: 27px;
+    color: #E53935;
 }

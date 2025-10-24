@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/index.css">
-    <link rel="shortcut icon" href="data/logo.png" type="image/x-icon">
-    <title>Atividade Avaliativa</title>
+    <link rel="shortcut icon" href="data/logo/logoq_bg.png" type="image/x-icon">
+    <title>MPM Informatica</title>
 
     <!--FONTES-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +15,59 @@
     <!--FONTES-->
 </head>
 <body>
-    <div class="barra-grid">
-            <img src="data/logo.png" alt="Logo" class="barra-logo">
-            <p class="barra-title">Kabum</p>
-    </div>
+    <header class="barra-grid">
+            <a href="index.html">
+                <img src="data/logo/logor_bg.png" alt="Logo" class="barra-logo">
+            </a>    
+            <input type="text" placeholder="Pesquisa aqui..." class="barra-search">
+            <div class="barra-icons">
+                <a href="contato.html">
+                    <img src="data/icons/call.png" alt="Contate-nos" class="icons">
+                </a>
+                <div  class="menu-user">
+                    <img src="data/icons/user.png" alt="User" class="icons">
 
-    <div class="body-grid">
-        <p class="body-title">Bem vindo à Kabum!</p>
-    </div>
+                    <ul class="menu-list">
+                        <li>Minha conta</li>
+                        <li>Meus pedidos</li>
+                        <li>Meus dados</li>
+                        <li>Endereço</li>
+                        <li>Carteira</li>
+                        <li>Sair</li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <div class="card-grid">
+            <div class="card-main">
+                <div  class="card">
+                    <img src="data/sell/asus.png">
+                    <p class="card-title">Notebook ASUS Vivobook 15 M1502, AMD Ryzen 7 5825U, 16GB RAM, 512 GB SSD</p>
+                    <p class="card-po">R$ 3.898,87</p>
+                    <p class="card-pf">R$ 3.009,99</p>
+                </div>
+                <div  class="card">
+                    <img src="data/sell/b550m.png">
+                    <p class="card-title">Placa-Mãe Asus TUF Gaming B550M-PLUS, AMD AM4, mATX , DDR4</p>
+                    <p class="card-po">R$ 920,99</p>
+                    <p class="card-pf">R$ 800,91</p>
+                </div>
+                <div  class="card">
+                    <img src="data/sell/ryzen5_5500png">
+                    <p class="card-title">Processador AMD Ryzen 5 5500, 3.6GHz, Cache 16MB</p>
+                    <p class="card-po">R$ 550,87</p>
+                    <p class="card-pf">R$ 459,00</p>
+                </div>
+                <div  class="card">
+                    <img src="data/sell/cobra.png">
+                    <p class="card-title">Mouse Gamer Redragon Cobra, Chroma RGB, 12400 DPI, 8 Botões, Preto</p>
+                    <p class="card-po">R$ 100,22</p>
+                    <p class="card-pf">R$ 95,99</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
